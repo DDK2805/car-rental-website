@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -15,9 +15,7 @@ import Footer from "./components/Footer/Footer";
 
 const App = () => {
   // dark mode start
-  const [theme, setTheme] = useState(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
-  );
+  const [theme, setTheme] = useState("dark"); // Default theme set to dark
   const element = document.documentElement;
 
   useEffect(() => {
@@ -31,7 +29,7 @@ const App = () => {
   }, [theme]);
   // dark mode end
 
-  React.useEffect(() => {
+  useEffect(() => {
     AOS.init({
       offset: 100,
       duration: 800,
@@ -40,6 +38,7 @@ const App = () => {
     });
     AOS.refresh();
   }, []);
+
   return (
     <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden">
       <Navbar theme={theme} setTheme={setTheme} />
