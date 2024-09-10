@@ -1,6 +1,5 @@
 **Car Rental Website**
 
-
 **Overview**
 This is a responsive car rental website built using React. It allows users to browse available cars, learn about the services offered, and contact the company for bookings. The website is designed with a modern aesthetic and includes dark mode support.
 
