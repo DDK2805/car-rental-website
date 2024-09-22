@@ -4,6 +4,7 @@
 This is a responsive car rental website built using React. It allows users to browse available cars, learn about the services offered, and contact the company for bookings. The website is designed with a modern aesthetic and includes dark mode support.
 
 **Features**
+
 Responsive Design: The website is fully responsive and works well on various screen sizes.
 
 Dark Mode: Users can toggle between dark and light themes for a personalized experience.
